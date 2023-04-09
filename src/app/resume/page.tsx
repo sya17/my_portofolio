@@ -107,12 +107,12 @@ const resume = () => {
             </div>
           </section>
 
-          <section className="w-full h-screen flex justify-center items-center border">
+          {/* <section className="w-full h-screen flex justify-center items-center border">
             <div className="w-full h-full flex flex-row">
               <div className="w-full h-full ">1</div>
               <div className="w-full h-full ">2</div>
             </div>
-          </section>
+          </section> */}
         </div>
       </div>
       <FooterSection />
