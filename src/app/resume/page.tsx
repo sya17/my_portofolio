@@ -1,27 +1,26 @@
-"use client";
+// "use client";
 import FooterSection from "../components/footerSection";
 import HeaderSection from "../components/headerSection";
 import { AiOutlineDown } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import profilePic from "../../../public/profile_sya.jpg";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 const resume = () => {
-  const ref = useRef<HTMLDivElement>(null);
+  // const ref = useRef<HTMLDivElement>(null);
 
-  const handleClick = () => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleClick = () => {
+  //   if (ref.current) {
+  //     ref.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <body className="flex flex-col min-h-screen font-mono bg-black ">
       <HeaderSection />
       <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center text-white ">
-        <div className="flex flex-col w-full overflow-y-auto space-y-1">
-
+        <div className="flex flex-col w-full overflow-y-auto space-y-4">
           <section className="w-full flex-col flex justify-center items-center space-y-4 h-screen text-white">
             <span className="text-7xl">RESUME</span>
             <div className="space-x-2 flex">
@@ -32,15 +31,15 @@ const resume = () => {
               <span>Resume</span>
             </div>
             <div className="cursor-pointer">
-              <button onClick={handleClick}>
-              {/* <button> */}
+              {/* <button onClick={handleClick}> */}
+              <button>
                 <AiOutlineDown className="animate-bounce z-0" />
               </button>
             </div>
           </section>
 
           <section
-            ref={ref}
+            // ref={ref}
             className="w-full h-screen flex justify-center items-center px-4 py-0 md:py-24"
           >
             <div className="w-full h-full flex flex-col md:flex-row ">
@@ -101,18 +100,93 @@ const resume = () => {
                   </div>
                 </div>
                 <div className="w-full h-full flex justify-start items-center ">
-                  <button className="border px-4 py-3 hover:bg-gray-300 hover:text-black ">Download CV</button>
+                  <button className="border px-4 py-3 hover:bg-gray-300 hover:text-black ">
+                    Download CV
+                  </button>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* <section className="w-full h-screen flex justify-center items-center border">
-            <div className="w-full h-full flex flex-row">
-              <div className="w-full h-full ">1</div>
-              <div className="w-full h-full ">2</div>
+          <section className="w-full h-screen flex justify-center items-center ">
+            <div className="w-full h-full flex flex-col md:flex-row py-4 px-2">
+              <div className="w-full h-full flex flex-col space-y-3 ">
+                <span className="underline">Education</span>
+                <div className="flex flex-row">
+                  <div className="w-10 "></div>
+                  <div className="space-y-2 flex flex-col ">
+                    <div className="border px-2 py-1 w-fit ">2017-2020</div>
+                    <div className="flex flex-col space-y-1">
+                      <span className="text-md">SMKN 1 Cikaum</span>
+                      <span className="text-sm">Rekayasa Perangkat Lunak</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-full flex flex-col space-y-3 ">
+                <span className="underline">Experience</span>
+                <div className="flex flex-row">
+                  <div className="w-10 "></div>
+                  <div className="space-y-2 flex flex-col ">
+                    <div className="border px-2 py-1 w-fit ">2021-Now</div>
+                    <div className="flex flex-col space-y-1">
+                      <span className="text-md">PT. Lemurian Inovasi Teknologi</span>
+                      <span className="text-sm">Java Developer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full h-full flex flex-col space-y-3 ">
+                <span className="underline">Projects</span>
+
+                <div className="w-full  flex flex-col">
+                  <div className="w-full h-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 pt-6">
+                        <div className="w-4/6 border-l-2 border-t-2 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2">
+                        <div className="flex flex-row justify-start items-center">
+                          {/* <div className="border-t-2 w-10 "></div> */}
+                          <div className="border px-2 py-1 w-fit ">2021</div>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">
+                            Bank Syariah Mandiri (BSM)
+                          </span>
+                          <span className="text-sm">
+                            Implementasi Modul Incident & Request ITSM
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        {/* <div className="w-4/6 border-l-2 border-t-2 h-full float-right" /> */}
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 ">
+                        <div className="border px-2 py-1 w-fit ">2021</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">
+                            Bank Syariah Mandiri (BSM){" "}
+                          </span>
+                          <span className="text-sm">
+                            Implementasi Modul Incident & Request ITSM
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </section> */}
+          </section>
         </div>
       </div>
       <FooterSection />
