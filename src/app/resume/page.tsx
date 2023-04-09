@@ -73,29 +73,29 @@ const resume = () => {
                 <div className="w-full h-full flex flex-col ">
                   <div className="w-full h-full flex flex-col md:flex-row ">
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Name:{'\u00A0'}</span>
+                      <span className="px-2">Name:</span>
                       <span>Sarip Hidayatullah</span>
                     </div>
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Age:{'\u00A0'}</span>
+                      <span className="px-2">Age:</span>
                       <span>21 Years</span>
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Job:{'\u00A0'}</span>
+                      <span className="px-2">Job:</span>
                       <span>Java Developer</span>
                     </div>
                   </div>
                   <div className="w-full h-full flex flex-col md:flex-row ">
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Citizenship:{'\u00A0'}</span>
+                      <span className="px-2">Citizenship:</span>
                       <span>Indonesia</span>
                     </div>
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Residence:{'\u00A0'}</span>
+                      <span className="px-2">Residence:</span>
                       <span>Jakarta</span>
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span className="">E-mail:{'\u00A0'}</span>
+                      <span className="px-2">E-mail: </span>
                       <span>srphdyt17@gmail.com</span>
                     </div>
                   </div>
