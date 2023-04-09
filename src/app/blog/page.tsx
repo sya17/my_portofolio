@@ -5,7 +5,7 @@ const blog = () =>{
     return (
         <body className="flex flex-col min-h-screen font-mono bg-black">
           <HeaderSection />
-          <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center ">
+          <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center text-white ">
           coming soon
           </div>
           <FooterSection />
