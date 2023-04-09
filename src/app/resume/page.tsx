@@ -1,20 +1,20 @@
-// "use client";
+"use client";
 import FooterSection from "../components/footerSection";
 import HeaderSection from "../components/headerSection";
 import { AiOutlineDown } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import profilePic from "../../../public/profile_sya.jpg";
-// import { useRef } from "react";
+import { useRef } from "react";
 
 const resume = () => {
-  // const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  // const handleClick = () => {
-  //   if (ref.current) {
-  //     ref.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  const handleClick = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <body className="flex flex-col min-h-screen font-mono bg-black ">
@@ -31,15 +31,15 @@ const resume = () => {
               <span>Resume</span>
             </div>
             <div className="cursor-pointer">
-              {/* <button onClick={handleClick}> */}
-              <button>
+              <button onClick={handleClick}>
+              {/* <button> */}
                 <AiOutlineDown className="animate-bounce z-0" />
               </button>
             </div>
           </section>
 
           <section
-            // ref={ref}
+            ref={ref}
             className="w-full h-screen flex justify-center items-center px-4 py-0 md:py-24"
           >
             <div className="w-full h-full flex flex-col md:flex-row ">
@@ -109,7 +109,8 @@ const resume = () => {
           </section>
 
           <section className="w-full h-screen flex justify-center items-center ">
-            <div className="w-full h-full flex flex-col md:flex-row py-4 px-2">
+            <div className="w-full h-full flex flex-col md:flex-row py-4 px-2 space-y-8">
+
               <div className="w-full h-full flex flex-col space-y-3 ">
                 <span className="underline">Education</span>
                 <div className="flex flex-row">
@@ -123,6 +124,7 @@ const resume = () => {
                   </div>
                 </div>
               </div>
+
               <div className="w-full h-full flex flex-col space-y-3 ">
                 <span className="underline">Experience</span>
                 <div className="flex flex-row">
