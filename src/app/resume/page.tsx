@@ -1,20 +1,20 @@
-// "use client";
+"use client";
 import FooterSection from "../components/footerSection";
 import HeaderSection from "../components/headerSection";
 import { AiOutlineDown } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import profilePic from "../../../public/profile_sya.jpg";
-// import { useRef } from "react";
+import { useRef } from "react";
 
 const resume = () => {
-  // const sectionRef = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  // const handleScrollToNext = () => {
-  //   console.log("SCROLLLL");
-  //   sectionRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
-  // const seed = Math.round(Math.random() * 100);
+  const handleClick = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <body className="flex flex-col min-h-screen font-mono bg-black">
@@ -32,15 +32,15 @@ const resume = () => {
               <span>Resume</span>
             </div>
             <div className="cursor-pointer">
-              {/* <button onClick={handleScrollToNext}> */}
-              <button>
+              <button onClick={handleClick}>
+              {/* <button> */}
                 <AiOutlineDown className="animate-bounce z-0" />
               </button>
             </div>
           </section>
 
           <section
-            // ref={sectionRef}
+            ref={ref}
             className="w-full h-screen flex justify-center items-center px-4 py-0 md:py-24"
           >
             <div className="w-full h-full flex flex-col md:flex-row ">
