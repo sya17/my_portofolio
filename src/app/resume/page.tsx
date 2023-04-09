@@ -20,7 +20,7 @@ const resume = () => {
     <body className="flex flex-col min-h-screen font-mono bg-black ">
       <HeaderSection />
       <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center text-white ">
-        <div className="flex flex-col w-full overflow-y-auto space-y-4">
+        <div className="flex flex-col w-full overflow-y-auto space-y-8">
           <section className="w-full flex-col flex justify-center items-center space-y-4 h-screen text-white">
             <span className="text-7xl">RESUME</span>
             <div className="space-x-2 flex">
@@ -130,7 +130,9 @@ const resume = () => {
                   <div className="space-y-2 flex flex-col ">
                     <div className="border px-2 py-1 w-fit ">2021-Now</div>
                     <div className="flex flex-col space-y-1">
-                      <span className="text-md">PT. Lemurian Inovasi Teknologi</span>
+                      <span className="text-md">
+                        PT. Lemurian Inovasi Teknologi
+                      </span>
                       <span className="text-sm">Java Developer</span>
                     </div>
                   </div>
@@ -147,9 +149,8 @@ const resume = () => {
                         <div className="w-4/6 border-l-2 border-t-2 h-full float-right" />
                       </div>
 
-                      <div className="space-y-2 flex flex-col py-2">
+                      <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="flex flex-row justify-start items-center">
-                          {/* <div className="border-t-2 w-10 "></div> */}
                           <div className="border px-2 py-1 w-fit ">2021</div>
                         </div>
                         <div className="flex flex-col space-y-1">
@@ -167,17 +168,128 @@ const resume = () => {
                     <div className="flex flex-row">
                       <div className="w-10 py-0">
                         <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
-                        {/* <div className="w-4/6 border-l-2 border-t-2 h-full float-right" /> */}
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
                       </div>
 
-                      <div className="space-y-2 flex flex-col py-2 ">
+                      <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="border px-2 py-1 w-fit ">2021</div>
                         <div className="flex flex-col space-y-1">
+                          <span className="text-lg">Project Internal</span>
+                          <span className="text-sm">
+                            Mengembangkan aplikasi Assessment Center
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2021</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">Project Internal</span>
+                          <span className="text-sm">Development Modul CRM</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2021</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">Project Internal</span>
+                          <span className="text-sm">
+                            Development ESTIM Dayak
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2021</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">Project Internal</span>
+                          <span className="text-sm">
+                            Development Rantaipasok
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2022</div>
+                        <div className="flex flex-col space-y-1">
                           <span className="text-lg">
-                            Bank Syariah Mandiri (BSM){" "}
+                            PT Aplikanusa Lintasarta
                           </span>
                           <span className="text-sm">
-                            Implementasi Modul Incident & Request ITSM
+                            Development Aplikasi Ultima
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0 ">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        <div className="w-4/6 border-l-2 border-t-0 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2022</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">
+                            PT. Pelindo Terminal Petikemas (PTP)
+                          </span>
+                          <span className="text-sm">
+                            Implementasi ESTIM SPTP
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        {/* <div className="w-4/6 border-l-2 border-t-0 h-full float-right" /> */}
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2022</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-lg">
+                            PT Aplikanusa Lintasarta
+                          </span>
+                          <span className="text-sm break-all hyphens-auto whitespace-normal">
+                            Development dan implementasi module complaint dan
+                            integrasi dengan crm
                           </span>
                         </div>
                       </div>
