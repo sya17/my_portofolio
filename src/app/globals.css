@@ -25,3 +25,229 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+/* Set the style for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+/* Set the style for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+/* Set the style for the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #F5F5F5;
+}
+
+/* Hide the scrollbar when not hovering over it */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+  display: none;
+}
+
+/* Show the scrollbar when hovering over it */
+::-webkit-scrollbar:hover {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* LOADING ANIMATION */
+.l {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.o {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.a {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.d {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.8s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.i {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.n {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.g {
+  color: #fff;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.d1 {
+  color: #fff;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.d2 {
+  color: #fff;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+@keyframes pass {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pass1 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* WRITING ANIMATION */
+
+.typing-demo {
+  width: 300px;
+  animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-size: 2em; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* GLITCH ANIMATION */
+/* h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  20% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  25% {
+    text-shadow: 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00;
+  }
+  26% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  40% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  45% {
+    text-shadow: 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00;
+  }
+  
+  46% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  60% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  65% {
+    text-shadow: 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00;
+  }
+  66% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  80% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  85% {
+    text-shadow: 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00, 0 0 0 #00ff00;
+  }
+  86% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+  }
+}
+ */
