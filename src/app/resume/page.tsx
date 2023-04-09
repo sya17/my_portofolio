@@ -17,9 +17,9 @@ const resume = () => {
   };
 
   return (
-    <body className="flex flex-col min-h-screen font-mono bg-black">
+    <body className="flex flex-col min-h-screen font-mono bg-black ">
       <HeaderSection />
-      <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center ">
+      <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center  ">
         <div className="flex flex-col w-full overflow-y-auto space-y-1">
 
           <section className="w-full flex-col flex justify-center items-center space-y-4 h-screen">
