@@ -73,29 +73,29 @@ const resume = () => {
                 <div className="w-full h-full flex flex-col ">
                   <div className="w-full h-full flex flex-col md:flex-row ">
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Name:&nbsp;</span>
+                      <span>Name:{'\u00A0'}</span>
                       <span>Sarip Hidayatullah</span>
                     </div>
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Age:&nbsp;</span>
+                      <span>Age:{'\u00A0'}</span>
                       <span>21 Years</span>
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Job:&nbsp;</span>
+                      <span>Job:{'\u00A0'}</span>
                       <span>Java Developer</span>
                     </div>
                   </div>
                   <div className="w-full h-full flex flex-col md:flex-row ">
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Citizenship:&nbsp;</span>
+                      <span>Citizenship:{'\u00A0'}</span>
                       <span>Indonesia</span>
                     </div>
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span>Residence:&nbsp;</span>
+                      <span>Residence:{'\u00A0'}</span>
                       <span>Jakarta</span>
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
-                      <span className="">E-mail:&nbsp;</span>
+                      <span className="">E-mail:{'\u00A0'}</span>
                       <span>srphdyt17@gmail.com</span>
                     </div>
                   </div>
