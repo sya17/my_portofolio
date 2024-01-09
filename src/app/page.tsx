@@ -11,7 +11,7 @@ export default async  function Home() {
           <div className="flex flex-col w-full justify-center items-center space-y-6 font-mono">
             {/* <span className="text-2xl">I&apos;M Sarip</span> */}
             <span className="text-2xl">Sarip Hidayatullah</span>
-            <span className="typing-demo text-xl">Programmer Java Developer</span>
+            <span className="typing-demo text-xl">Software Developer</span>
           </div>
         </div>
       </main>
