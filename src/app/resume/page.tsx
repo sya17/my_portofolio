@@ -32,7 +32,7 @@ const resume = () => {
             </div>
             <div className="cursor-pointer">
               <button onClick={handleClick}>
-              {/* <button> */}
+                {/* <button> */}
                 <AiOutlineDown className="animate-bounce z-0" />
               </button>
             </div>
@@ -62,11 +62,13 @@ const resume = () => {
                 <div className="w-full h-2/3 "></div>
                 <div className="w-full h-full flex justify-start items-center text-justify">
                   <p>
-                    Saya bekerja di Startup Industri IT selama kurang lebih 2
-                    tahun, memiliki pengalaman dalam pengembangan web aplikasi.
-                    Di dalam peran yang saya miliki, saya dengan sukses
-                    mengembangkan beberapa aplikasi seperti tools ITSM, platform
-                    pembelajaran dan aplikasi marketplace.
+                    Saya telah bekerja di industri IT startup selama sekitar 2
+                    tahun, dengan pengalaman yang khusus dalam pengembangan
+                    aplikasi web. Selama peran saya, saya berhasil mengembangkan
+                    beberapa aplikasi, seperti tools ITSM, platform
+                    pembelajaran, aplikasi marketplace, serta memiliki
+                    pengalaman dalam pengembangan microservice menggunakan Java
+                    Spring dan aplikasi di bidang finance.
                   </p>
                 </div>
                 <div className="w-full h-full flex flex-col ">
@@ -77,7 +79,7 @@ const resume = () => {
                     </div>
                     <div className="w-full md:w-3/4 h-full inline-flex justify-start items-center  py-3 md:py-0 ">
                       <span className="px-2">Age:</span>
-                      <span>21 Years</span>
+                      <span>22 Years</span>
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
                       <span className="px-2">Job:</span>
@@ -95,7 +97,7 @@ const resume = () => {
                     </div>
                     <div className="w-full h-full inline-flex justify-start items-center  py-3 md:py-0 ">
                       <span className="px-2">E-mail: </span>
-                      <span>srphdyt17@gmail.com</span>
+                      <span>sariphidayatullah170701@gmail.com</span>
                     </div>
                   </div>
                 </div>
@@ -110,8 +112,7 @@ const resume = () => {
 
           <section className="w-full h-screen flex justify-center items-center ">
             <div className="w-full h-full flex flex-col md:flex-row py-4 px-2 space-y-8">
-
-              <div className="w-full h-full flex flex-col space-y-3 ">
+              <div className="w-full h-full flex flex-col space-y-3">
                 <span className="underline">Education</span>
                 <div className="flex flex-row">
                   <div className="w-10 "></div>
@@ -125,23 +126,61 @@ const resume = () => {
                 </div>
               </div>
 
-              <div className="w-full h-full flex flex-col space-y-3 ">
+              <div className="w-full h-full flex flex-col space-y-3">
                 <span className="underline">Experience</span>
-                <div className="flex flex-row">
-                  <div className="w-10 "></div>
-                  <div className="space-y-2 flex flex-col ">
-                    <div className="border px-2 py-1 w-fit ">2021-Now</div>
-                    <div className="flex flex-col space-y-1">
-                      <span className="text-md">
-                        PT. Lemurian Inovasi Teknologi
-                      </span>
-                      <span className="text-sm">Java Developer</span>
+
+                <div className="w-full  flex flex-col">
+                  <div className="w-full h-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 pt-6">
+                        <div className="w-4/6 border-l-2 border-t-2 h-full float-right" />
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="flex flex-row justify-start items-center">
+                          <div className="border px-2 py-1 w-fit ">
+                            2021-2023
+                          </div>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-md">
+                            PT. Lemurian Inovasi Teknologi
+                          </span>
+                          <span className="text-sm">Java Developer</span>
+                          <span className="text-sm">
+                            ZK Framework (Monolith)
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full ">
+                    <div className="flex flex-row">
+                      <div className="w-10 py-0">
+                        <div className="w-4/6 border-l-2 border-t-0 border-b-2 h-6 float-right" />
+                        {/* <div className="w-4/6 border-l-2 border-t-0 h-full float-right" /> */}
+                      </div>
+
+                      <div className="space-y-2 flex flex-col py-2 w-full">
+                        <div className="border px-2 py-1 w-fit ">2023-Now</div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="text-md">
+                            PT. Prawathiya Karsa Pradiptha
+                          </span>
+                          <span className="text-sm">Java Developer</span>
+                          <span className="text-sm">ZK Framework</span>
+                          <span className="text-sm">Vue Framework</span>
+                          <span className="text-sm">
+                            Spring Framework (Microservice)
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="w-full h-full flex flex-col space-y-3 ">
+              <div className="w-full h-full flex flex-col space-y-3">
                 <span className="underline">Projects</span>
 
                 <div className="w-full  flex flex-col">
@@ -284,7 +323,7 @@ const resume = () => {
                       </div>
 
                       <div className="space-y-2 flex flex-col py-2 w-full">
-                        <div className="border px-2 py-1 w-fit ">2022</div>
+                        <div className="border px-2 py-1 w-fit ">2022-2023</div>
                         <div className="flex flex-col space-y-1">
                           <span className="text-lg">
                             PT Aplikanusa Lintasarta
