@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  ignoreDuringBuilds: true,
+  // App Router is stable in Next.js 14+, no experimental flag needed
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;

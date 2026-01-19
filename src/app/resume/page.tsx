@@ -1,25 +1,25 @@
-"use client";
-import FooterSection from "../components/footerSection";
-import HeaderSection from "../components/headerSection";
-import { AiOutlineDown } from "react-icons/ai";
-import Link from "next/link";
-import Image from "next/image";
-import profilePic from "../../../public/profile_sya.jpg";
-import { useRef } from "react";
+'use client';
+import FooterSection from '../components/footerSection';
+import HeaderSection from '../components/headerSection';
+import { AiOutlineDown } from 'react-icons/ai';
+import Link from 'next/link';
+import Image from 'next/image';
+import profilePic from '../../../public/profile_sya.jpg';
+import { useRef } from 'react';
 
 const resume = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <body className="flex flex-col min-h-screen font-mono bg-black ">
+    <div className="flex flex-col min-h-screen font-mono bg-black">
       <HeaderSection />
-      <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center text-white ">
+      <div className="flex-1 w-full py-4 px-6 overflow-y-auto flex justify-center items-center text-white">
         <div className="flex flex-col w-full overflow-y-auto space-y-8">
           <section className="w-full flex-col flex justify-center items-center space-y-4 h-screen text-white">
             <span className="text-7xl">RESUME</span>
@@ -62,13 +62,11 @@ const resume = () => {
                 <div className="w-full h-2/3 "></div>
                 <div className="w-full h-full flex justify-start items-center text-justify">
                   <p>
-                    Saya telah bekerja di industri IT startup selama sekitar 2
-                    tahun, dengan pengalaman yang khusus dalam pengembangan
-                    aplikasi web. Selama peran saya, saya berhasil mengembangkan
-                    beberapa aplikasi, seperti tools ITSM, platform
-                    pembelajaran, aplikasi marketplace, serta memiliki
-                    pengalaman dalam pengembangan microservice menggunakan Java
-                    Spring dan aplikasi di bidang finance.
+                    Saya telah bekerja di industri IT startup selama sekitar 2 tahun, dengan
+                    pengalaman yang khusus dalam pengembangan aplikasi web. Selama peran saya, saya
+                    berhasil mengembangkan beberapa aplikasi, seperti tools ITSM, platform
+                    pembelajaran, aplikasi marketplace, serta memiliki pengalaman dalam pengembangan
+                    microservice menggunakan Java Spring dan aplikasi di bidang finance.
                   </p>
                 </div>
                 <div className="w-full h-full flex flex-col ">
@@ -138,18 +136,12 @@ const resume = () => {
 
                       <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="flex flex-row justify-start items-center">
-                          <div className="border px-2 py-1 w-fit ">
-                            2021-2023
-                          </div>
+                          <div className="border px-2 py-1 w-fit ">2021-2023</div>
                         </div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-md">
-                            PT. Lemurian Inovasi Teknologi
-                          </span>
+                          <span className="text-md">PT. Lemurian Inovasi Teknologi</span>
                           <span className="text-sm">Java Developer</span>
-                          <span className="text-sm">
-                            ZK Framework (Monolith)
-                          </span>
+                          <span className="text-sm">ZK Framework (Monolith)</span>
                         </div>
                       </div>
                     </div>
@@ -164,15 +156,11 @@ const resume = () => {
                       <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="border px-2 py-1 w-fit ">2023-Now</div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-md">
-                            PT. Prawathiya Karsa Pradiptha
-                          </span>
+                          <span className="text-md">PT. Prawathiya Karsa Pradiptha</span>
                           <span className="text-sm">Java Developer</span>
                           <span className="text-sm">ZK Framework</span>
                           <span className="text-sm">Vue Framework</span>
-                          <span className="text-sm">
-                            Spring Framework (Microservice)
-                          </span>
+                          <span className="text-sm">Spring Framework (Microservice)</span>
                         </div>
                       </div>
                     </div>
@@ -195,9 +183,7 @@ const resume = () => {
                           <div className="border px-2 py-1 w-fit ">2021</div>
                         </div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-lg">
-                            Bank Syariah Mandiri (BSM)
-                          </span>
+                          <span className="text-lg">Bank Syariah Mandiri (BSM)</span>
                           <span className="text-sm">
                             Implementasi Modul Incident & Request ITSM
                           </span>
@@ -216,9 +202,7 @@ const resume = () => {
                         <div className="border px-2 py-1 w-fit ">2021</div>
                         <div className="flex flex-col space-y-1">
                           <span className="text-lg">Project Internal</span>
-                          <span className="text-sm">
-                            Mengembangkan aplikasi Assessment Center
-                          </span>
+                          <span className="text-sm">Mengembangkan aplikasi Assessment Center</span>
                         </div>
                       </div>
                     </div>
@@ -250,9 +234,7 @@ const resume = () => {
                         <div className="border px-2 py-1 w-fit ">2021</div>
                         <div className="flex flex-col space-y-1">
                           <span className="text-lg">Project Internal</span>
-                          <span className="text-sm">
-                            Development ESTIM Dayak
-                          </span>
+                          <span className="text-sm">Development ESTIM Dayak</span>
                         </div>
                       </div>
                     </div>
@@ -268,9 +250,7 @@ const resume = () => {
                         <div className="border px-2 py-1 w-fit ">2021</div>
                         <div className="flex flex-col space-y-1">
                           <span className="text-lg">Project Internal</span>
-                          <span className="text-sm">
-                            Development Rantaipasok
-                          </span>
+                          <span className="text-sm">Development Rantaipasok</span>
                         </div>
                       </div>
                     </div>
@@ -285,12 +265,8 @@ const resume = () => {
                       <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="border px-2 py-1 w-fit ">2022</div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-lg">
-                            PT Aplikanusa Lintasarta
-                          </span>
-                          <span className="text-sm">
-                            Development Aplikasi Ultima
-                          </span>
+                          <span className="text-lg">PT Aplikanusa Lintasarta</span>
+                          <span className="text-sm">Development Aplikasi Ultima</span>
                         </div>
                       </div>
                     </div>
@@ -305,12 +281,8 @@ const resume = () => {
                       <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="border px-2 py-1 w-fit ">2022</div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-lg">
-                            PT. Pelindo Terminal Petikemas (PTP)
-                          </span>
-                          <span className="text-sm">
-                            Implementasi ESTIM SPTP
-                          </span>
+                          <span className="text-lg">PT. Pelindo Terminal Petikemas (PTP)</span>
+                          <span className="text-sm">Implementasi ESTIM SPTP</span>
                         </div>
                       </div>
                     </div>
@@ -325,12 +297,9 @@ const resume = () => {
                       <div className="space-y-2 flex flex-col py-2 w-full">
                         <div className="border px-2 py-1 w-fit ">2022-2023</div>
                         <div className="flex flex-col space-y-1">
-                          <span className="text-lg">
-                            PT Aplikanusa Lintasarta
-                          </span>
+                          <span className="text-lg">PT Aplikanusa Lintasarta</span>
                           <span className="text-sm break-all hyphens-auto whitespace-normal">
-                            Development dan implementasi module complaint dan
-                            integrasi dengan crm
+                            Development dan implementasi module complaint dan integrasi dengan crm
                           </span>
                         </div>
                       </div>
@@ -343,7 +312,7 @@ const resume = () => {
         </div>
       </div>
       <FooterSection />
-    </body>
+    </div>
   );
 };
 

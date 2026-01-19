@@ -4,7 +4,7 @@
 
 /* Set the style for the scrollbar track */
 ::-webkit-scrollbar-track {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 5px;
 }
 
@@ -16,13 +16,13 @@
 
 /* Set the style for the scrollbar corner */
 ::-webkit-scrollbar-corner {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* Hide the scrollbar when not hovering over it */
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   display: none;
 }
 
@@ -34,7 +34,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 /* LOADING ANIMATION */
 .l {
@@ -146,12 +145,13 @@ html {
   }
 }
 
-
 /* WRITING ANIMATION */
 
 .typing-demo {
   width: 300px;
-  animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+  animation:
+    typing 4s steps(22),
+    blink 0.5s step-end infinite alternate;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   white-space: nowrap;
@@ -165,7 +165,7 @@ html {
     width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent;

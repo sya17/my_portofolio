@@ -1,8 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-
-const HeaderSection = () =>  {
-
+const HeaderSection = () => {
   return (
     <header className="py-4 px-6 shadow-md sticky top-0 bg-black z-50">
       <nav className="my-2">
