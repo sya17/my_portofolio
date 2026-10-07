@@ -13,11 +13,11 @@ const sans = Atkinson_Hyperlegible_Next({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Sarip Hidayatullah, Java developer',
+    default: 'Sarip Hidayatullah, full-stack developer',
     template: '%s · Sarip Hidayatullah',
   },
   description:
-    'Java developer in Jakarta, working on web applications with Spring, ZK and Vue since 2021.',
+    'Full-stack developer in Jakarta: Spring, ZK, Vue.js, Next.js and Flutter, working on web applications since 2021.',
 };
 
 // Applies a saved theme before first paint, so there is no flash.

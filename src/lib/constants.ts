@@ -1,7 +1,7 @@
 // Personal Information
 export const PERSONAL_INFO = {
   name: 'Sarip Hidayatullah',
-  title: 'Java Developer',
+  title: 'Full-stack Developer',
   email: 'sariphidayatullah170701@gmail.com',
   location: {
     city: 'Jakarta',
@@ -50,6 +50,12 @@ export const SKILLS = [
 
 // Education
 export const EDUCATION = [
+  {
+    id: 'pelita-bangsa',
+    institution: 'Universitas Pelita Bangsa',
+    major: 'Informatics (Teknik Informatika), one semester',
+    period: '2024',
+  },
   {
     id: 'smkn1',
     institution: 'SMKN 1 Cikaum',

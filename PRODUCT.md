@@ -6,11 +6,11 @@ brand
 
 ## Users
 
-Recruiters and engineering leads, in Indonesia and abroad, who are hiring for Java or backend roles. They open the link from a CV, a LinkedIn message, or a job application, usually on a laptop during the working day, sometimes on a phone between meetings. They are comparing several candidates and give each one a short look. The job to be done: understand within seconds who Sarip is, what he has worked on, for how long, and how to reach him or get his CV.
+Recruiters and engineering leads, in Indonesia and abroad, who are hiring for full-stack, Java or backend roles. They open the link from a CV, a LinkedIn message, or a job application, usually on a laptop during the working day, sometimes on a phone between meetings. They are comparing several candidates and give each one a short look. The job to be done: understand within seconds who Sarip is, what he has worked on, for how long, and how to reach him or get his CV.
 
 ## Product Purpose
 
-A personal portfolio for Sarip Hidayatullah, a Java developer in Jakarta (since 2021: PT. Lemurian Inovasi Teknologi, then PT. Prawathiya Karsa Pradiptha). It shows real experience, real client and internal projects, education, and contact details, and offers the CV as a PDF. Success: a reader leaves with an accurate picture of his experience and either downloads the CV or sends an email.
+A personal portfolio for Sarip Hidayatullah, a full-stack developer in Jakarta, officially titled Java Developer (since 2021: PT. Lemurian Inovasi Teknologi, then PT. Prawathiya Karsa Pradiptha). It shows real experience, real client and internal projects, education, and contact details, and offers the CV as a PDF. Success: a reader leaves with an accurate picture of his experience and either downloads the CV or sends an email.
 
 ## Brand Personality
 

@@ -19,7 +19,7 @@ export default function Home() {
             Hidayatullah
           </h1>
           <p className="mt-6 max-w-[28ch] text-[clamp(1.3rem,1.1rem_+_1vw,1.75rem)] leading-snug sm:mt-8">
-            <mark>Java developer</mark> in {PERSONAL_INFO.location.city}, working on web
+            <mark>Full-stack developer</mark> in {PERSONAL_INFO.location.city}, working on web
             applications since {PERSONAL_INFO.careerStart}.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
             Contact
           </h2>
           <div>
-            <p>Want to talk about a Java role?</p>
+            <p>Want to talk about a full-stack or Java role?</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href={`mailto:${PERSONAL_INFO.email}`} className="btn-solid">
                 Email me
