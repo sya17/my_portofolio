@@ -1,24 +1,22 @@
 'use client';
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
+import Link from 'next/link';
+
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-black text-white">
-      <div className="text-center">
-        <h1 className="mb-4 text-6xl font-bold">Something went wrong!</h1>
-        <p className="mb-8 text-gray-400">{error.message}</p>
-        <button
-          onClick={reset}
-          className="rounded-lg bg-white px-6 py-3 text-black transition-colors hover:bg-gray-200"
-        >
+    <section className="pb-10 pt-10 sm:pt-16">
+      <h1 className="page-title">Something broke on this page.</h1>
+      <p className="lede mt-6 max-w-[40ch]">
+        Load it again. If it keeps failing, the email link in the footer still works.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <button type="button" onClick={reset} className="btn-solid">
           Try again
         </button>
+        <Link href="/" className="btn-line">
+          Back to the home page
+        </Link>
       </div>
-    </div>
+    </section>
   );
 }

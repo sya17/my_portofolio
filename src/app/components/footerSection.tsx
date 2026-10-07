@@ -1,47 +1,33 @@
-import { AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiFillGithub } from 'react-icons/ai';
-import { PERSONAL_INFO, getCurrentYear } from '@/lib/constants';
+import { PERSONAL_INFO, SOCIAL_LINKS, getCurrentYear } from '@/lib/constants';
+
+const LINKS = [
+  { href: `mailto:${PERSONAL_INFO.email}`, label: 'Email' },
+  { href: SOCIAL_LINKS.github, label: 'GitHub' },
+  { href: SOCIAL_LINKS.linkedin, label: 'LinkedIn' },
+  { href: SOCIAL_LINKS.instagram, label: 'Instagram' },
+];
 
 const FooterSection = () => {
   return (
-    <footer className="text-white py-4 px-6 flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-between sm:items-center sticky bottom-0 bg-black">
-      <p className="text-center sm:text-left font-mono text-xs">
-        &copy; {getCurrentYear()} {PERSONAL_INFO.name}
-      </p>
-      <div className="text-center text-xl  mt-4 sm:mt-0">
-        <div className="w-full inline-flex space-x-4 sm:justify-center sm:items-center">
-          <a
-            href="https://github.com/sya17"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-          >
-            <AiFillGithub className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sarip-hidayatullah-75a3231aa/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-          >
-            <AiFillLinkedin className="w-5 h-5" />
-          </a>
-          <a
-            href="https://web.facebook.com/syrf17/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook Profile"
-          >
-            <AiFillFacebook className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.instagram.com/srp_hdyt/?igshid=ZDdkNTZiNTM="
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Profile"
-          >
-            <AiFillInstagram className="w-5 h-5" />
-          </a>
-        </div>
+    <footer className="page mt-24 sm:mt-32">
+      <div className="flex flex-col gap-2 border-t border-rule py-6 text-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>
+          &copy; {getCurrentYear()} {PERSONAL_INFO.name}, {PERSONAL_INFO.location.city}
+        </p>
+        <ul className="-mx-2 flex flex-wrap">
+          {LINKS.map(({ href, label }) => (
+            <li key={label}>
+              <a
+                href={href}
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="inline-flex min-h-[2.75rem] items-center px-2 hover:text-ink hover:underline"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </footer>
   );

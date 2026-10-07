@@ -1,48 +1,49 @@
-// Portfolio Projects Data
+// Client and internal projects, newest first
 export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  technologies: string[];
-  image?: string;
-  githubUrl?: string;
-  liveUrl?: string;
-  featured: boolean;
-  category: 'web' | 'mobile' | 'backend' | 'fullstack';
+  year: string;
+  client: string;
+  work: string;
 }
 
 export const projects: Project[] = [
   {
-    id: 'project-1',
-    title: 'E-Commerce Platform',
-    description:
-      'Full-stack e-commerce platform with payment integration, inventory management, and admin dashboard.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Stripe'],
-    featured: true,
-    category: 'fullstack',
-    githubUrl: 'https://github.com/sya17',
-    liveUrl: '#',
+    year: '2022–2023',
+    client: 'PT Aplikanusa Lintasarta',
+    work: 'Built and rolled out a complaint module, integrated with the CRM',
   },
   {
-    id: 'project-2',
-    title: 'Task Management System',
-    description:
-      'Collaborative task management application with real-time updates and team collaboration features.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-    featured: true,
-    category: 'fullstack',
-    githubUrl: 'https://github.com/sya17',
+    year: '2022',
+    client: 'PT. Pelindo Terminal Petikemas (PTP)',
+    work: 'Implemented ESTIM SPTP',
   },
   {
-    id: 'project-3',
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website built with Next.js and TypeScript.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    featured: false,
-    category: 'web',
-    githubUrl: 'https://github.com/sya17',
-    liveUrl: '#',
+    year: '2022',
+    client: 'PT Aplikanusa Lintasarta',
+    work: 'Developed the Ultima application',
+  },
+  {
+    year: '2021',
+    client: 'Internal project',
+    work: 'Developed Rantaipasok, a supply chain application',
+  },
+  {
+    year: '2021',
+    client: 'Internal project',
+    work: 'Developed ESTIM Dayak',
+  },
+  {
+    year: '2021',
+    client: 'Internal project',
+    work: 'Developed a CRM module',
+  },
+  {
+    year: '2021',
+    client: 'Internal project',
+    work: 'Built an Assessment Center application',
+  },
+  {
+    year: '2021',
+    client: 'Bank Syariah Mandiri (BSM)',
+    work: 'Implemented the Incident and Request modules of an ITSM system',
   },
 ];
-
-export const categories = ['all', 'web', 'mobile', 'backend', 'fullstack'] as const;

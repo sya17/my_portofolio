@@ -2,172 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Set the style for the scrollbar track */
-::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
-  border-radius: 5px;
+/* Paper and ink. The highlighter is the only accent. Both themes follow the
+   system until the visitor picks one with the header toggle. */
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(oklch(1 0 0), oklch(0.178 0 0));
+  --ink: light-dark(oklch(0.2 0.012 85), oklch(0.94 0.01 91));
+  --muted: light-dark(oklch(0.47 0.012 85), oklch(0.74 0.01 85));
+  --rule: light-dark(oklch(0.9 0.006 85), oklch(0.3 0.004 85));
+  --mark: light-dark(oklch(0.87 0.165 91), oklch(0.82 0.16 88));
+  --mark-ink: oklch(0.2 0.012 85);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Set the style for the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 5px;
+:root[data-theme='light'] {
+  color-scheme: light;
 }
 
-/* Set the style for the scrollbar corner */
-::-webkit-scrollbar-corner {
-  background-color: #f5f5f5;
+:root[data-theme='dark'] {
+  color-scheme: dark;
 }
 
-/* Hide the scrollbar when not hovering over it */
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: #f5f5f5;
-  display: none;
-}
-
-/* Show the scrollbar when hovering over it */
-::-webkit-scrollbar:hover {
-  display: block;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* LOADING ANIMATION */
-.l {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 0.2s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.o {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 0.4s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.a {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 0.6s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.d {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 0.8s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.i {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 1s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.n {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 1.2s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.g {
-  color: #fff;
-  opacity: 0;
-  animation: pass 2s ease-in-out infinite;
-  animation-delay: 1.4s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.d1 {
-  color: #fff;
-  opacity: 0;
-  animation: pass1 2s ease-in-out infinite;
-  animation-delay: 1.6s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-.d2 {
-  color: #fff;
-  opacity: 0;
-  animation: pass1 2s ease-in-out infinite;
-  animation-delay: 2s;
-  letter-spacing: 0.5em;
-  text-shadow: 2px 2px 3px #919191;
-}
-
-@keyframes pass {
-  0% {
-    opacity: 1;
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-text-size-adjust: 100%;
   }
 
-  50% {
-    opacity: 0;
+  body {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-kerning: normal;
   }
 
-  100% {
-    opacity: 1;
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--mark);
+    color: var(--mark-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* The highlighter stroke: drawn left to right once, on load. */
+  mark {
+    color: var(--mark-ink);
+    background-color: transparent;
+    background-image: linear-gradient(var(--mark), var(--mark));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 0.18em;
+    margin: 0 -0.06em;
+    border-radius: 0.35em 0.15em 0.4em 0.2em / 0.25em 0.4em 0.2em 0.35em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    animation: mark-sweep 750ms var(--ease-out-quart) 400ms both;
   }
 }
 
-@keyframes pass1 {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* WRITING ANIMATION */
-
-.typing-demo {
-  width: 300px;
-  animation:
-    typing 4s steps(22),
-    blink 0.5s step-end infinite alternate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  /* font-size: 2em; */
-}
-
-@keyframes typing {
+@keyframes mark-sweep {
   from {
-    width: 0;
+    background-size: 0% 100%;
+    color: var(--ink);
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+@layer components {
+  .page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-8 lg:px-12;
+  }
+
+  /* The CV grid: a short label on the left, the facts on the right. */
+  .sheet {
+    @apply grid gap-x-8 gap-y-2 border-t border-rule pt-6 sm:grid-cols-[9rem_1fr] lg:grid-cols-[12rem_1fr];
+  }
+
+  .sheet-label {
+    @apply font-semibold text-muted;
+  }
+
+  /* One dated row inside a sheet: period on the left, what happened on the right. */
+  .entry {
+    @apply grid gap-x-6 sm:grid-cols-[6.5rem_1fr];
+  }
+
+  .page-title {
+    @apply text-[clamp(2.5rem,1.75rem_+_3.5vw,4rem)] font-extrabold leading-none tracking-[-0.02em];
+  }
+
+  .lede {
+    @apply text-[clamp(1.2rem,1.05rem_+_0.8vw,1.5rem)] leading-snug;
+  }
+
+  .link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--muted);
+    text-underline-offset: 0.22em;
+    transition:
+      text-decoration-color 150ms ease-out,
+      text-decoration-thickness 150ms ease-out;
+  }
+
+  .link:hover {
+    text-decoration-color: var(--ink);
+    text-decoration-thickness: 2px;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[2.75rem] items-center justify-center rounded-md px-5 font-semibold transition-colors duration-150;
+  }
+
+  .btn-solid {
+    @apply btn bg-ink text-bg hover:bg-muted;
+  }
+
+  .btn-line {
+    @apply btn border border-ink hover:bg-ink hover:text-bg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  mark {
+    animation: none;
   }
 }

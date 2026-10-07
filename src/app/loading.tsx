@@ -1,5 +1,7 @@
-import LoadingSpinner from './components/ui/LoadingSpinner';
-
 export default function Loading() {
-  return <LoadingSpinner />;
+  return (
+    <p role="status" className="pt-16 text-muted">
+      Loading the page…
+    </p>
+  );
 }
