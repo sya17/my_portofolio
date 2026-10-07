@@ -6,6 +6,7 @@ import {
   EDUCATION,
   EMAIL_PARTS,
   PERSONAL_INFO,
+  SKILLS,
   WORK_EXPERIENCE,
   calculateAge,
 } from '@/lib/constants';
@@ -41,6 +42,20 @@ export default function Resume() {
             built ITSM tools, a learning platform and a marketplace app, developed microservices
             with Java Spring, and worked on applications for the finance sector.
           </p>
+        </section>
+
+        <section className="sheet" aria-labelledby="skills">
+          <h2 id="skills" className="sheet-label">
+            Skills
+          </h2>
+          <dl className="grid gap-x-6 gap-y-2 sm:grid-cols-[auto_1fr]">
+            {SKILLS.map(({ label, items }) => (
+              <div key={label} className="contents">
+                <dt className="text-muted">{label}</dt>
+                <dd className="mb-2 sm:mb-0">{items.join(', ')}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         <section className="sheet" aria-labelledby="details">

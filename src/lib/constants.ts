@@ -37,6 +37,17 @@ export const WORK_EXPERIENCE = [
   },
 ] as const;
 
+// Skills. The last group is lighter experience and is shown that way.
+export const SKILLS = [
+  { label: 'Languages', items: ['Java', 'TypeScript', 'Dart'] },
+  {
+    label: 'Frameworks',
+    items: ['Spring (microservices)', 'ZK Framework', 'Vue.js', 'Next.js', 'Flutter'],
+  },
+  { label: 'Databases', items: ['Oracle', 'PostgreSQL'] },
+  { label: 'Some experience', items: ['Python', 'Go', 'Rust'] },
+] as const;
+
 // Education
 export const EDUCATION = [
   {

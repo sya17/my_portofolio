@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import profilePic from '../../public/profile_sya.jpg';
-import { PERSONAL_INFO, WORK_EXPERIENCE } from '@/lib/constants';
+import { PERSONAL_INFO, SKILLS, WORK_EXPERIENCE } from '@/lib/constants';
 import { projects } from '@/data/projects';
 
 export default function Home() {
   const [current] = WORK_EXPERIENCE;
+  const main = SKILLS.slice(0, -1);
+  const extra = SKILLS[SKILLS.length - 1];
 
   return (
     <>
@@ -38,10 +40,22 @@ export default function Home() {
           </h2>
           <div>
             <p>
-              <span className="font-semibold">{current.position}</span> at {current.company},
-              since {current.period.slice(0, 4)}.
+              <span className="font-semibold">{current.position}</span> at {current.company}, since{' '}
+              {current.period.slice(0, 4)}.
             </p>
             <p className="text-muted">{current.technologies.join(', ')}</p>
+          </div>
+        </section>
+
+        <section className="sheet" aria-labelledby="stack">
+          <h2 id="stack" className="sheet-label">
+            Stack
+          </h2>
+          <div>
+            <p>{main.flatMap((group) => group.items).join(', ')}</p>
+            <p className="text-muted">
+              Some experience with {new Intl.ListFormat('en').format(extra.items)}.
+            </p>
           </div>
         </section>
 
