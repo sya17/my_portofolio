@@ -19,8 +19,8 @@ export default function Home() {
             Hidayatullah
           </h1>
           <p className="mt-6 max-w-[28ch] text-[clamp(1.3rem,1.1rem_+_1vw,1.75rem)] leading-snug sm:mt-8">
-            <mark>Full-stack developer</mark> in {PERSONAL_INFO.location.city}, working on web
-            applications since {PERSONAL_INFO.careerStart}.
+            <mark>Full-stack developer</mark> in {PERSONAL_INFO.location.city}, building software
+            since {PERSONAL_INFO.careerStart}.
           </p>
         </div>
         <Image

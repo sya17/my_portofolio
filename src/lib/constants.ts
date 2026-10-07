@@ -45,7 +45,7 @@ export const SKILLS = [
     items: ['Spring (microservices)', 'ZK Framework', 'Vue.js', 'Next.js', 'Flutter'],
   },
   { label: 'Databases', items: ['Oracle', 'PostgreSQL'] },
-  { label: 'Some experience', items: ['Python', 'Go', 'Rust'] },
+  { label: 'Some experience', items: ['Python', 'Go', 'Rust', 'MongoDB'] },
 ] as const;
 
 // Education

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s · Sarip Hidayatullah',
   },
   description:
-    'Full-stack developer in Jakarta: Spring, ZK, Vue.js, Next.js and Flutter, working on web applications since 2021.',
+    'Full-stack developer in Jakarta: Spring, ZK, Vue.js, Next.js and Flutter. Building software since 2021.',
 };
 
 // Applies a saved theme before first paint, so there is no flash.

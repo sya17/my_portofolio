@@ -38,9 +38,9 @@ export default function Resume() {
           </h2>
           <p className="lede max-w-[46ch]">
             I&apos;ve worked at Indonesian software startups{' '}
-            <mark>since {PERSONAL_INFO.careerStart}</mark>, mostly on web applications. I&apos;ve
-            built ITSM tools, a learning platform and a marketplace app, developed microservices
-            with Java Spring, and worked on applications for the finance sector.
+            <mark>since {PERSONAL_INFO.careerStart}</mark>. I&apos;ve built ITSM tools, a learning
+            platform and a marketplace app, developed microservices with Java Spring, and worked on
+            applications for the finance sector.
           </p>
         </section>
 
