@@ -1,4 +1,5 @@
-// Client and internal projects, newest first
+// Client and internal projects, newest first. Titles follow the original
+// resume; they name the project, not its outcome.
 export interface Project {
   year: string;
   client: string;
@@ -9,41 +10,41 @@ export const projects: Project[] = [
   {
     year: '2022–2023',
     client: 'PT Aplikanusa Lintasarta',
-    work: 'Built and rolled out a complaint module, integrated with the CRM',
+    work: 'Complaint module and CRM integration',
   },
   {
     year: '2022',
     client: 'PT. Pelindo Terminal Petikemas (PTP)',
-    work: 'Implemented ESTIM SPTP',
+    work: 'ESTIM SPTP implementation',
   },
   {
     year: '2022',
     client: 'PT Aplikanusa Lintasarta',
-    work: 'Developed the Ultima application',
+    work: 'Ultima application',
   },
   {
     year: '2021',
     client: 'Internal project',
-    work: 'Developed Rantaipasok, a supply chain application',
+    work: 'Rantaipasok',
   },
   {
     year: '2021',
     client: 'Internal project',
-    work: 'Developed ESTIM Dayak',
+    work: 'ESTIM Dayak',
   },
   {
     year: '2021',
     client: 'Internal project',
-    work: 'Developed a CRM module',
+    work: 'CRM module',
   },
   {
     year: '2021',
     client: 'Internal project',
-    work: 'Built an Assessment Center application',
+    work: 'Assessment Center application',
   },
   {
     year: '2021',
     client: 'Bank Syariah Mandiri (BSM)',
-    work: 'Implemented the Incident and Request modules of an ITSM system',
+    work: 'Incident and Request modules for ITSM',
   },
 ];

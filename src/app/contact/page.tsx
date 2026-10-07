@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { PERSONAL_INFO, SOCIAL_LINKS } from '@/lib/constants';
+import { EMAIL_PARTS, PERSONAL_INFO, SOCIAL_LINKS } from '@/lib/constants';
 import CopyEmail from '../components/copyEmail';
 
 export const metadata: Metadata = { title: 'Contact' };
@@ -24,7 +24,10 @@ export default function Contact() {
           href={mailto}
           className="inline-block text-[clamp(1.3rem,0.55rem_+_3.6vw,3.25rem)] font-extrabold leading-tight tracking-[-0.015em] [overflow-wrap:anywhere]"
         >
-          <mark>{PERSONAL_INFO.email}</mark>
+          <mark>
+            {EMAIL_PARTS[0]}
+            <wbr />@{EMAIL_PARTS[1]}
+          </mark>
         </a>
         <div className="mt-8 flex flex-wrap items-start gap-3">
           <a href={mailto} className="btn-solid">

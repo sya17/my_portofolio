@@ -64,8 +64,10 @@
     background-image: linear-gradient(var(--mark), var(--mark));
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 0 0.18em;
-    margin: 0 -0.06em;
+    /* Equal padding and negative margin: the stroke overshoots the word
+       without changing the spacing around it. */
+    padding: 0 0.14em;
+    margin: 0 -0.14em;
     border-radius: 0.35em 0.15em 0.4em 0.2em / 0.25em 0.4em 0.2em 0.35em;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;

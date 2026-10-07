@@ -18,8 +18,7 @@ export default function Portfolio() {
       <header className="pb-10 pt-10 sm:pb-14 sm:pt-16">
         <h1 className="page-title">Portfolio</h1>
         <p className="lede mt-6 max-w-[44ch]">
-          Systems I&apos;ve worked on for <mark>a bank, a container terminal and an ICT provider</mark>
-          , plus internal products. Code I can share is on{' '}
+          Client and internal projects I&apos;ve worked on, newest first. Code I can share is on{' '}
           <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="link">
             GitHub
           </a>

@@ -48,6 +48,10 @@ export const EDUCATION = [
 ] as const;
 
 // Helper Functions
+
+// The address split at '@', so narrow screens break the line there.
+export const EMAIL_PARTS = PERSONAL_INFO.email.split('@');
+
 export const calculateAge = (birthYear: number): number => {
   return new Date().getFullYear() - birthYear;
 };

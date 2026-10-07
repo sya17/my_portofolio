@@ -2,7 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { EDUCATION, PERSONAL_INFO, WORK_EXPERIENCE, calculateAge } from '@/lib/constants';
+import {
+  EDUCATION,
+  EMAIL_PARTS,
+  PERSONAL_INFO,
+  WORK_EXPERIENCE,
+  calculateAge,
+} from '@/lib/constants';
 import { projects } from '@/data/projects';
 
 export const metadata: Metadata = { title: 'Resume' };
@@ -53,7 +59,8 @@ export default function Resume() {
             <dt className="text-muted">Email</dt>
             <dd className="min-w-0 [overflow-wrap:anywhere]">
               <a href={`mailto:${PERSONAL_INFO.email}`} className="link">
-                {PERSONAL_INFO.email}
+                {EMAIL_PARTS[0]}
+                <wbr />@{EMAIL_PARTS[1]}
               </a>
             </dd>
           </dl>

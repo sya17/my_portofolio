@@ -82,7 +82,7 @@ components:
 
 Dial: ENERGY 2 / RHYTHM 2 / MOTION 2.
 
-The site is a CV that a careful reader has already gone through with a highlighter. Paper, ink, one black-and-white portrait, and a yellow stroke on the few words a recruiter would mark anyway: the role, the years, the clients, the email. Everything else stays quiet so those strokes land.
+The site is a CV that a careful reader has already gone through with a highlighter. Paper, ink, one black-and-white portrait, and a yellow stroke on the few words a recruiter would mark anyway: the role, the years, the email. Everything else stays quiet so those strokes land.
 
 Structure comes from the CV itself: a two-column sheet, short label on the left, facts on the right, separated by hairline rules. Pages repeat that grammar and each breaks it once: the oversized name and portrait on Home, the big year numerals on Portfolio, the full-size email on Contact.
 
@@ -94,7 +94,7 @@ Not this: dark neon developer portfolios, glass cards, typing effects, skill bar
 - **Ink** (warm near-black / warm off-white): all primary text, the solid button, focus rings. 18:1 on paper in light, 16:1 in dark.
 - **Muted** (6.9:1 light, 8.2:1 dark): labels, dates, client names, secondary lines. Never lighter than this.
 - **Rule**: hairlines between sheet sections and list rows only. Decorative, never a control boundary.
-- **Highlighter** (`oklch(0.87 0.165 91)`): the only accent. Used only through `<mark>`, one per page, plus text selection. Text on it is always dark ink (12:1), in both themes.
+- **Highlighter** (`oklch(0.87 0.165 91)`): the only accent. Used only through `<mark>`, at most one per page, plus text selection. Text on it is always dark ink (12:1), in both themes.
 
 Theme follows the system through CSS `light-dark()` and `color-scheme`; the header toggle sets `data-theme` on `<html>` and saves it in `localStorage`.
 
@@ -125,7 +125,7 @@ Flat. No shadows. Depth comes from the portrait, the type scale, and the hairlin
 
 ## 6. Do's and Don'ts
 
-- Do keep one `<mark>` per page, on the phrase a recruiter would highlight.
+- Do keep at most one `<mark>` per page, on a phrase a recruiter would highlight. A page with nothing worth marking gets none.
 - Do take every fact from `src/lib/constants.ts` or `src/data/projects.ts`; add real data there first.
 - Do keep targets at 44px and contrast at AA in both themes.
 - Don't add cards, shadows, gradients, glow, icons-for-decoration, or a second accent color.

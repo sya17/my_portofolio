@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s · Sarip Hidayatullah',
   },
   description:
-    'Java developer in Jakarta, building back-office systems with Spring, ZK and Vue since 2021.',
+    'Java developer in Jakarta, working on web applications with Spring, ZK and Vue since 2021.',
 };
 
 // Applies a saved theme before first paint, so there is no flash.
